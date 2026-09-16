@@ -1,6 +1,8 @@
 :root{
   --navy:#0f2b35;
   --accent:#d97706;
+  --doctolib:#1568c4;
+  --doctolib-dark:#0f4f96;
   --text:#374453;
   --text-light:#7c8896;
   --border:#e5e9ed;
@@ -42,11 +44,9 @@ li{margin-bottom:6px;}
 
 .btn{
   display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:8px;
-  background:var(--navy);color:#fff;font-weight:600;font-size:14.5px;border:none;width:fit-content;
+  background:var(--doctolib);color:#fff;font-weight:600;font-size:14.5px;border:none;width:fit-content;
 }
-.btn:hover{background:#0d1f2e;}
-.btn-list{display:flex;flex-direction:column;gap:12px;margin:16px 0 8px;}
-.note{font-size:13px;color:var(--text-light);}
+.btn:hover{background:var(--doctolib-dark);}
 .map-link{color:var(--accent);text-decoration:underline;font-weight:600;}
 .map-link:hover{color:var(--navy);}
 
@@ -58,13 +58,24 @@ li{margin-bottom:6px;}
   text-align:center;color:var(--text-light);margin:20px 0;
 }
 
-.home-links{margin-top:32px;}
-.home-link{
-  display:flex;justify-content:space-between;align-items:center;gap:16px;
-  padding:20px 0;border-bottom:1px solid var(--border);font-weight:600;font-size:17px;color:var(--navy);
+.card-list{display:flex;flex-direction:column;gap:16px;margin-top:20px;}
+.card-link{
+  display:block;border:1px solid var(--border);border-radius:10px;padding:22px 24px;
+  transition:border-color .15s ease,background-color .15s ease;
 }
-.home-link:hover{color:var(--accent);}
-.home-link small{display:block;font-weight:400;font-size:13.5px;color:var(--text-light);margin-top:3px;}
-.home-link svg{width:18px;height:18px;flex-shrink:0;}
+.card-link:hover{border-color:var(--accent);background:#fafafa;}
+.card-link h2{border-bottom:none;margin:0 0 6px;padding-bottom:0;font-size:19px;}
+.card-link p{margin:0;color:var(--text-light);font-size:14.5px;}
+
+.quick-links{
+  margin-top:64px;padding-top:24px;border-top:1px solid var(--border);
+  display:flex;gap:24px;flex-wrap:wrap;
+}
+.quick-links a{font-weight:600;font-size:14.5px;color:var(--navy);}
+.quick-links a:hover{color:var(--accent);}
+
+.back-link{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14.5px;color:var(--text-light);margin-bottom:8px;}
+.back-link:hover{color:var(--accent);}
+.back-link svg{width:15px;height:15px;}
 
 footer{border-top:1px solid var(--border);padding:26px 0;text-align:center;font-size:13px;color:var(--text-light);}
