@@ -170,6 +170,9 @@ li{margin-bottom:6px;}
 .back-link svg{width:15px;height:15px;}
 
 footer{padding:28px 0;text-align:center;font-size:12.5px;color:var(--text-light);}
+.footer-links{margin-bottom:10px;}
+.footer-links a{font-weight:600;color:var(--text-light);}
+.footer-links a:hover{color:var(--accent);}
 
 @media (max-width: 640px){
   .nav-wrap{flex-direction:column;align-items:flex-start;padding:16px 20px;}
