@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AMDP Sport — Cabinet de Médecine du Sport</title>
-<meta name="description" content="Cabinet de médecine du sport : diagnostic et traitement des pathologies sportives, infiltrations échoguidées, PRP, ondes de choc. Prenez rendez-vous.">
+<meta name="description" content="Cabinet de médecine du sport : infiltrations échoguidées, PRP et échographie diagnostique. Informations pratiques et prise de rendez-vous.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -80,58 +80,6 @@
   .burger{display:none;background:none;border:none;cursor:pointer;padding:8px;}
   .burger svg{width:26px;height:26px;color:var(--navy);}
 
-  /* Hero */
-  .hero{
-    position:relative;overflow:hidden;
-    background:radial-gradient(1200px 600px at 85% -10%, #14456b 0%, var(--navy) 55%, var(--navy-dark) 100%);
-    color:#fff;padding:100px 0 110px;
-  }
-  .hero::before{
-    content:"";position:absolute;inset:0;opacity:.12;
-    background-image:radial-gradient(circle at 20% 30%, #fff 1px, transparent 1px);
-    background-size:26px 26px;pointer-events:none;
-  }
-  .hero-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:center;position:relative;z-index:1;}
-  .hero h1{color:#fff;font-size:clamp(34px,4.4vw,52px);margin-bottom:20px;letter-spacing:-0.01em;}
-  .hero h1 span{color:#ffb08a;}
-  .hero p.lead{font-size:18px;color:#cfe0ee;max-width:520px;margin-bottom:34px;}
-  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px;}
-  .hero-stats{display:flex;gap:34px;flex-wrap:wrap;}
-  .hero-stats div{border-left:2px solid rgba(255,255,255,0.25);padding-left:14px;}
-  .hero-stats strong{display:block;font-size:24px;font-family:'Poppins',sans-serif;color:#fff;}
-  .hero-stats span{font-size:13px;color:#a9c2d8;}
-  .hero-visual{
-    background:linear-gradient(160deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02));
-    border:1px solid rgba(255,255,255,0.15);border-radius:22px;padding:30px;backdrop-filter:blur(6px);
-  }
-  .hero-visual .card{background:#fff;border-radius:16px;padding:22px;color:var(--text);}
-  .hero-visual .card h4{font-size:15px;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:8px;}
-  .hero-visual .card h4 svg{width:20px;height:20px;color:var(--teal);}
-  .hero-visual .mini-list{display:flex;flex-direction:column;gap:10px;margin-top:6px;}
-  .hero-visual .mini-list li{list-style:none;display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text-light);}
-  .hero-visual .mini-list li svg{width:16px;height:16px;color:var(--teal);flex-shrink:0;}
-
-  /* Trust bar */
-  .trust{background:var(--white);border-bottom:1px solid var(--border);padding:26px 0;}
-  .trust .container{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
-  .trust-item{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--text-light);}
-  .trust-item svg{width:20px;height:20px;color:var(--blue);flex-shrink:0;}
-
-  /* Pathologies */
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
-  .path-card{
-    background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:30px;
-    transition:all .25s ease;
-  }
-  .path-card:hover{box-shadow:var(--shadow);transform:translateY(-4px);border-color:transparent;}
-  .path-card .icon{
-    width:52px;height:52px;border-radius:12px;background:#eaf2f8;display:flex;align-items:center;
-    justify-content:center;margin-bottom:18px;
-  }
-  .path-card .icon svg{width:26px;height:26px;color:var(--blue);}
-  .path-card h3{font-size:18px;margin-bottom:8px;}
-  .path-card p{font-size:14.5px;color:var(--text-light);}
-
   /* Treatments */
   .treatments{background:var(--white);}
   .treat-list{display:flex;flex-direction:column;gap:18px;}
@@ -153,14 +101,13 @@
 
   /* Blog */
   .blog{background:var(--bg);}
-  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .blog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,420px));gap:26px;justify-content:center;}
   .blog-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all .25s ease;display:flex;flex-direction:column;}
   .blog-card:hover{box-shadow:var(--shadow);transform:translateY(-4px);}
   .blog-thumb{height:150px;display:flex;align-items:center;justify-content:center;position:relative;}
   .blog-thumb svg{width:44px;height:44px;color:#fff;opacity:.9;}
   .blog-thumb.b1{background:linear-gradient(135deg,#1a5f8f,#0f2d4a);}
   .blog-thumb.b2{background:linear-gradient(135deg,#1fa38c,#0f6b5c);}
-  .blog-thumb.b3{background:linear-gradient(135deg,#e8622c,#a83f18);}
   .blog-body{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1;}
   .blog-cat{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;}
   .blog-body h3{font-size:17px;}
@@ -168,6 +115,23 @@
   .blog-link{font-size:14px;font-weight:700;color:var(--blue);display:inline-flex;align-items:center;gap:6px;}
   .blog-link svg{width:15px;height:15px;transition:transform .2s;}
   .blog-card:hover .blog-link svg{transform:translateX(3px);}
+
+  /* Articles */
+  .article{background:var(--white);border-top:1px solid var(--border);}
+  .article-inner{max-width:720px;margin:0 auto;}
+  .article-back{font-size:14px;font-weight:600;color:var(--blue);display:flex;align-items:center;gap:6px;margin-bottom:24px;}
+  .article-back svg{width:15px;height:15px;transform:rotate(180deg);}
+  .article-inner .eyebrow{margin-bottom:10px;}
+  .article-inner h2{font-size:clamp(26px,3vw,34px);margin-bottom:28px;}
+  .article-inner h3{font-size:20px;margin:32px 0 14px;}
+  .article-inner p{color:var(--text-light);margin-bottom:14px;font-size:15.5px;}
+  .article-inner p strong{color:var(--navy);}
+  .article-inner ol,.article-inner ul{margin:0 0 16px 22px;color:var(--text-light);font-size:15.5px;}
+  .article-inner li{margin-bottom:8px;}
+  .contra-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;}
+  .contra-box{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;}
+  .contra-box h4{font-size:14px;color:var(--navy);text-transform:uppercase;letter-spacing:.03em;margin-bottom:10px;}
+  .contra-box ul{margin:0 0 0 18px;}
 
   /* About */
   .about{background:var(--white);}
@@ -227,26 +191,22 @@
   .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:#7f9bb3;}
 
   @media (max-width: 900px){
-    .hero-grid{grid-template-columns:1fr;}
-    .hero-visual{order:-1;}
-    .grid-3{grid-template-columns:1fr 1fr;}
     .blog-grid{grid-template-columns:1fr 1fr;}
     .about-grid{grid-template-columns:1fr;}
     .contact-grid{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr 1fr;}
+    .contra-grid{grid-template-columns:1fr;}
     nav{display:none;}
     .nav-phone span{display:none;}
     .burger{display:block;}
   }
   @media (max-width: 600px){
     section{padding:60px 0;}
-    .grid-3{grid-template-columns:1fr;}
     .blog-grid{grid-template-columns:1fr;}
     .treat-item{grid-template-columns:1fr;text-align:left;}
     .treat-item .tag{justify-self:start;}
     .form-row{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr;}
-    .hero-stats{gap:22px;}
   }
 
   nav.mobile-open{
@@ -258,7 +218,7 @@
 </head>
 <body>
 
-<header>
+<header id="accueil">
   <div class="nav-wrap">
     <a href="#accueil" class="logo">
       <span class="logo-mark">
@@ -268,7 +228,6 @@
     </a>
     <nav id="mainNav">
       <ul>
-        <li><a href="#pathologies">Pathologies</a></li>
         <li><a href="#traitements">Traitements</a></li>
         <li><a href="#blog">Blog &amp; conseils</a></li>
         <li><a href="#cabinet">Le cabinet</a></li>
@@ -287,101 +246,6 @@
     </div>
   </div>
 </header>
-
-<section class="hero" id="accueil">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow" style="color:#ffb08a;">Médecine du sport &amp; traumatologie</span>
-      <h1>Comprendre votre blessure, <span>retrouver le sport</span> sereinement.</h1>
-      <p class="lead">Diagnostic précis, échographie au cabinet, infiltrations échoguidées et traitements innovants (PRP, ondes de choc) pour les sportifs amateurs et confirmés — et pour toute personne active.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Prendre rendez-vous en ligne</a>
-        <a href="#traitements" class="btn btn-outline">Découvrir les traitements</a>
-      </div>
-      <div class="hero-stats">
-        <div><strong>+15 ans</strong><span>d'expérience clinique</span></div>
-        <div><strong>Échographie</strong><span>au cabinet, sans délai</span></div>
-        <div><strong>100%</strong><span>gestes échoguidés</span></div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="card">
-        <h4>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
-          Une prise en charge en 3 étapes
-        </h4>
-        <ul class="mini-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Consultation &amp; examen clinique</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Échographie diagnostique immédiate</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Plan de traitement personnalisé</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="trust">
-  <div class="container">
-    <div class="trust-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
-      Médecin diplômé en médecine du sport
-    </div>
-    <div class="trust-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
-      Rendez-vous rapides
-    </div>
-    <div class="trust-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/></svg>
-      Gestes échoguidés sécurisés
-    </div>
-    <div class="trust-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-      Accueil sportifs &amp; tout public
-    </div>
-  </div>
-</div>
-
-<section id="pathologies">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Ce que nous traitons</span>
-      <h2>Les pathologies les plus fréquentes</h2>
-      <p>Du sportif de haut niveau au pratiquant occasionnel, chaque blessure est explorée avec précision avant tout traitement.</p>
-    </div>
-    <div class="grid-3">
-      <div class="path-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-12h-7l1-8z"/></svg></div>
-        <h3>Tendinopathies</h3>
-        <p>Tendon d'Achille, rotulien, épaule, épicondylite (« tennis elbow ») : diagnostic échographique et traitement adapté au stade de la lésion.</p>
-      </div>
-      <div class="path-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.83 2.83 0 0 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
-        <h3>Entorses &amp; ligaments</h3>
-        <p>Entorse de cheville, genou (ligaments croisés, ménisques) : bilan précis pour orienter vers un traitement fonctionnel ou chirurgical.</p>
-      </div>
-      <div class="path-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5v2a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5zM6 21v-2a6 6 0 0 1 12 0v2"/></svg></div>
-        <h3>Lésions musculaires</h3>
-        <p>Élongations, claquages, courbatures pathologiques (ischio-jambiers, mollet, adducteurs) : évaluation du stade et rééducation guidée.</p>
-      </div>
-      <div class="path-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></div>
-        <h3>Arthrose &amp; douleurs articulaires</h3>
-        <p>Genou, hanche, épaule : prise en charge des douleurs mécaniques liées à l'activité physique et au vieillissement articulaire.</p>
-      </div>
-      <div class="path-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4M12 10V4M9 4h6"/></svg></div>
-        <h3>Pubalgie &amp; hanche du sportif</h3>
-        <p>Douleurs pubiennes et de hanche chez le footballeur, coureur ou joueur de sports pivots : bilan complet et rééducation ciblée.</p>
-      </div>
-      <div class="path-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4-4-8-7.5-8-12a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 4.5-4 8-8 12z"/></svg></div>
-        <h3>Fasciite &amp; épine calcanéenne</h3>
-        <p>Douleurs de la voûte plantaire et du talon fréquentes chez le coureur : diagnostic échographique et infiltrations si nécessaire.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="traitements" class="treatments">
   <div class="container">
@@ -408,28 +272,12 @@
         <span class="tag">Échoguidé</span>
       </div>
       <div class="treat-item">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-12h-7l1-8z"/></svg></div>
-        <div>
-          <h3>Ondes de choc radiales</h3>
-          <p>Traitement non invasif des tendinopathies chroniques (Achille, épaule, coude) et des fasciites plantaires, stimulant la régénération tissulaire.</p>
-        </div>
-        <span class="tag">Non invasif</span>
-      </div>
-      <div class="treat-item">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
         <div>
           <h3>Échographie musculo-squelettique</h3>
           <p>Réalisée directement au cabinet lors de la consultation, elle permet un diagnostic immédiat sans attente d'examen complémentaire externe.</p>
         </div>
         <span class="tag">Diagnostic</span>
-      </div>
-      <div class="treat-item">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16M8 16l3-4 3 3 5-7"/></svg></div>
-        <div>
-          <h3>Plan de reprise sportive</h3>
-          <p>Élaboration d'un protocole de réathlétisation progressif, en lien avec vos kinésithérapeutes et préparateurs physiques.</p>
-        </div>
-        <span class="tag">Suivi</span>
       </div>
     </div>
   </div>
@@ -451,7 +299,7 @@
           <span class="blog-cat">Traitements</span>
           <h3>Infiltration échoguidée : comment se déroule la séance ?</h3>
           <p>Déroulé, indications, sensations pendant le geste et suites : tout ce qu'il faut savoir avant une infiltration guidée par échographie.</p>
-          <a href="#" class="blog-link">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#article-infiltration" class="blog-link">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
       <article class="blog-card">
@@ -462,21 +310,124 @@
           <span class="blog-cat">Traitements</span>
           <h3>PRP : le plasma riche en plaquettes, une solution pour vos tendons</h3>
           <p>Qu'est-ce que le PRP, comment est-il préparé, et pour quelles pathologies est-il réellement efficace ? On démêle le vrai du faux.</p>
-          <a href="#" class="blog-link">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-      <article class="blog-card">
-        <div class="blog-thumb b3">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-12h-7l1-8z"/></svg>
-        </div>
-        <div class="blog-body">
-          <span class="blog-cat">Pathologies</span>
-          <h3>Tendinopathie d'Achille : symptômes, causes et traitements</h3>
-          <p>Reconnaître les signes d'une tendinopathie d'Achille et comprendre les options thérapeutiques, de la rééducation aux ondes de choc.</p>
-          <a href="#" class="blog-link">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#article-prp" class="blog-link">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+<section id="article-infiltration" class="article">
+  <div class="container article-inner">
+    <a href="#blog" class="article-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Retour aux articles</a>
+    <span class="eyebrow">Traitements</span>
+    <h2>Infiltrations échoguidées : comment se déroule la séance ?</h2>
+
+    <p>L'infiltration échoguidée consiste à injecter un produit thérapeutique (corticoïde, acide hyaluronique ou PRP) directement au contact de la zone douloureuse, sous contrôle échographique en temps réel. Ce guidage permet un geste précis, plus sûr et plus confortable qu'une infiltration réalisée « à l'aveugle ».</p>
+
+    <h3>Pourquoi utiliser l'échographie pour guider le geste ?</h3>
+    <p>L'échographie permet de visualiser en direct les structures anatomiques (tendon, bourse, articulation, nerf) et de s'assurer que l'aiguille atteint précisément la zone à traiter, tout en évitant les structures sensibles (vaisseaux, nerfs). Cette précision limite le risque de geste inefficace ou mal positionné.</p>
+
+    <h3>Dans quelles situations c'est proposé</h3>
+    <p>Les infiltrations échoguidées sont proposées dans de nombreuses pathologies rencontrées en médecine du sport : tendinopathies, bursites, arthrose (genou, épaule, hanche), certains syndromes canalaires, ou douleurs articulaires résistant aux traitements de première intention (repos, kinésithérapie, antalgiques).</p>
+    <p>Le produit injecté est choisi selon la pathologie et son stade : corticoïde en cas d'inflammation marquée, acide hyaluronique dans certaines arthroses, ou PRP dans une logique de régénération tissulaire.</p>
+
+    <h3>Le jour de l'infiltration</h3>
+    <ol>
+      <li><strong>Interrogatoire et vérification des contre-indications</strong> = avant le geste, le médecin vérifie l'absence de contre-indication (traitement anticoagulant, infection, allergie...) et répond à vos questions.</li>
+      <li><strong>Repérage échographique</strong> = la zone à traiter est localisée précisément à l'aide de la sonde d'échographie, en respectant les règles d'asepsie.</li>
+      <li><strong>L'injection</strong> = l'aiguille est guidée en temps réel sous contrôle échographique jusqu'à la cible, puis le produit est injecté.</li>
+    </ol>
+
+    <h3>Après l'infiltration</h3>
+    <p>Une petite gêne ou une sensibilité locale peut être ressentie dans les heures suivant le geste. Il est généralement recommandé de limiter les efforts intenses sur la zone traitée pendant quelques jours.</p>
+    <p>L'efficacité du traitement peut varier selon la pathologie et le produit utilisé : certains effets sont ressentis rapidement (corticoïde), d'autres de façon plus progressive (acide hyaluronique, PRP).</p>
+
+    <h3>Limites et contre-indications</h3>
+    <p>Comme tout geste médical, l'infiltration échoguidée a des limites et des contre-indications qui sont systématiquement vérifiées avant le geste.</p>
+    <div class="contra-box">
+      <h4>Principales contre-indications</h4>
+      <ul>
+        <li>Infection cutanée au point de ponction ou infection générale évolutive</li>
+        <li>Trouble de la coagulation non contrôlé</li>
+        <li>Allergie connue au produit injecté</li>
+        <li>Diabète déséquilibré (prudence particulière pour les corticoïdes)</li>
+      </ul>
+    </div>
+
+    <h3>Coût et prise en charge</h3>
+    <p>La prise en charge dépend du produit injecté et du contexte de la consultation : certaines infiltrations peuvent être partiellement remboursées par l'Assurance Maladie, d'autres (comme le PRP) ne le sont pas. Un devis vous est communiqué avant le geste lorsque cela est nécessaire, et il est conseillé de vous renseigner auprès de votre mutuelle.</p>
+  </div>
+</section>
+
+<section id="article-prp" class="article">
+  <div class="container article-inner">
+    <a href="#blog" class="article-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Retour aux articles</a>
+    <span class="eyebrow">Traitements</span>
+    <h2>Le PRP, comment ça marche ?</h2>
+
+    <p>Le PRP (Plasma Riche en Plaquettes) est une thérapie innovante issu du propre sang du patient, utilisé pour favoriser la régénération tissulaire ou limiter l'extension des lésions.</p>
+
+    <h3>Principe du PRP</h3>
+    <p>Le PRP contient une forte concentration de plaquettes.</p>
+    <p>Les plaquettes contiennent notamment des granules qui renferment différents facteurs de croissance impliqués dans la vascularisation, la production de matrice extracellulaire et les phénomènes de réparation tissulaire.</p>
+    <p>Les plaquettes participent ainsi au processus naturel de réparation des tissus.</p>
+
+    <h3>Dans quelles situations c'est proposé</h3>
+    <p><strong>Arthrose du genou =</strong> c'est actuellement l'une des indications du PRP pour lesquelles la littérature scientifique est la plus abondante. Les études montrent principalement une amélioration de la douleur et de la fonction, particulièrement chez les patients présentant une arthrose légère à modérée.</p>
+    <p>Le PRP ne doit cependant pas être présenté comme capable de « reconstruire » un cartilage détruit. L'objectif principal est l'amélioration des symptômes et de la fonction.</p>
+    <p><strong>Arthrose du pouce (rhizarthrose)</strong></p>
+    <p><strong>Tendinopathies =</strong> le PRP est également utilisé dans certaines tendinopathies, notamment :</p>
+    <ul>
+      <li>tendon épicondyliens</li>
+      <li>tendon rotulien</li>
+      <li>tendon du moyen fessier</li>
+      <li>tendon de la cheville</li>
+      <li>certaines tendinopathies de la coiffe des rotateurs</li>
+    </ul>
+
+    <h3>Le jour de l'injection :</h3>
+    <ol>
+      <li><strong>Un prélèvement sanguin</strong> = une petite quantité de sang est prélevée, comme lors d'une prise de sang classique.</li>
+      <li><strong>La séparation du sang</strong> = le sang est ensuite placé dans une centrifugeuse. La centrifugation permet de séparer les différents composants du sang et d'obtenir une fraction de plasma contenant une concentration importante de plaquettes.</li>
+      <li><strong>L'injection</strong> = le PRP est ensuite injecté au niveau de la zone à traiter.</li>
+    </ol>
+
+    <h3>Les suites de l'injection</h3>
+    <p>Il est assez fréquent de ressentir une augmentation transitoire de la douleur après une injection de PRP.</p>
+    <p>La zone peut également être un peu plus sensible, gonflée ou chaude pendant quelques jours. Cela ne signifie pas nécessairement que le traitement a « aggravé » la lésion.</p>
+    <p>Cette phase initiale est ensuite progressivement suivie par une phase de résolution et de remodelage.</p>
+
+    <h3>Limites et contre-indications</h3>
+    <p>Les niveau de preuve semblent variables selon l'indication et le profil du patient. Il n'existe pas de standardisation des protocoles. Les effets potentiels ne sont immédiat (délai de plusieurs semaines) Les effets attendus sont limités à plusieurs mois.</p>
+    <p>Les principales contre indications :</p>
+    <div class="contra-grid">
+      <div class="contra-box">
+        <h4>Absolues</h4>
+        <ul>
+          <li>Infection cutanée au point de ponction, ou infection générale évolutive</li>
+          <li>Thrombopénie sévère ou thrombopathie connue</li>
+          <li>Hémopathie maligne, Néoplasie évolutive</li>
+          <li>Immunodépression, maladie auto-immune évolutive</li>
+        </ul>
+      </div>
+      <div class="contra-box">
+        <h4>Relatives</h4>
+        <ul>
+          <li>Traitement antiagrégant</li>
+          <li>AINS : on propose en général un arrêt 7 jours avant et 15 jours après l'infiltration</li>
+          <li>Injection de corticoïde de moins de 1 mois dans le même site</li>
+          <li>Diabète déséquilibré</li>
+          <li>Grossesse et allaitement - par précaution, faute de données</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Coût et remboursement</h3>
+    <p>Le PRP est un traitement non pris en charge par l'Assurance Maladie.</p>
+    <p>Le coût correspond notamment au matériel nécessaire au prélèvement, à la préparation du PRP et à son injection.</p>
+    <p>Un devis vous est remis avant le traitement.</p>
+    <p>Certaines complémentaires santé peuvent éventuellement proposer une participation dans le cadre de leur contrat. Il est donc conseillé de se renseigner directement auprès de sa mutuelle.</p>
   </div>
 </section>
 
@@ -599,7 +550,6 @@
       <div>
         <h5>Navigation</h5>
         <ul>
-          <li><a href="#pathologies">Pathologies</a></li>
           <li><a href="#traitements">Traitements</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#cabinet">Le cabinet</a></li>
@@ -608,9 +558,8 @@
       <div>
         <h5>Traitements</h5>
         <ul>
-          <li><a href="#traitements">PRP</a></li>
-          <li><a href="#traitements">Infiltrations échoguidées</a></li>
-          <li><a href="#traitements">Ondes de choc</a></li>
+          <li><a href="#article-prp">PRP</a></li>
+          <li><a href="#article-infiltration">Infiltrations échoguidées</a></li>
           <li><a href="#traitements">Échographie</a></li>
         </ul>
       </div>
