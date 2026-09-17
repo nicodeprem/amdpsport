@@ -125,6 +125,21 @@ li{margin-bottom:6px;}
 .doctor-info strong{display:block;color:var(--navy);font-size:15.5px;margin-bottom:2px;}
 .doctor-info span{color:var(--text-light);font-size:13.5px;}
 
+/* Location card (cabinet page) */
+.location-card{
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  background:linear-gradient(135deg,#f8fbfa,#eef6f5);
+  border-radius:14px;padding:20px 24px;margin:22px 0 12px;
+  box-shadow:0 10px 26px -18px rgba(15,43,53,0.25);
+}
+.location-icon{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,#eaf6f5,#d3ece9);
+  display:flex;align-items:center;justify-content:center;
+}
+.location-icon svg{width:20px;height:20px;color:var(--teal-dark);}
+.location-card .map-link{font-weight:600;font-size:15.5px;}
+
 .empty-state{
   border:1px dashed var(--border);border-radius:10px;padding:36px 24px;
   text-align:center;color:var(--text-light);margin:20px 0;
@@ -164,6 +179,8 @@ li{margin-bottom:6px;}
 .expertise-item li{display:flex;align-items:flex-start;gap:8px;font-size:14px;color:var(--text-light);margin-bottom:7px;}
 .expertise-item li:last-child{margin-bottom:0;}
 .expertise-item li svg{width:13px;height:13px;color:var(--accent);flex-shrink:0;margin-top:4px;}
+.inline-link{text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:2px;}
+.inline-link:hover{color:var(--teal);text-decoration-color:var(--teal);}
 
 .back-link{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14.5px;color:var(--text-light);margin-bottom:8px;}
 .back-link:hover{color:var(--accent);}
