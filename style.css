@@ -149,11 +149,18 @@ li{margin-bottom:6px;}
   box-shadow:0 10px 26px -18px rgba(15,43,53,0.25);
 }
 .access-row{
-  display:flex;gap:10px;flex-wrap:wrap;font-size:14.5px;padding:12px 0;
+  display:flex;align-items:center;gap:14px;font-size:14.5px;padding:12px 0;
   border-bottom:1px solid rgba(15,43,53,0.06);
 }
 .access-row:last-child{border-bottom:none;}
-.access-label{font-weight:600;color:var(--navy);min-width:110px;flex-shrink:0;}
+.access-icon{
+  width:36px;height:36px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,#eaf6f5,#d3ece9);
+  display:flex;align-items:center;justify-content:center;
+}
+.access-icon svg{width:18px;height:18px;color:var(--teal-dark);}
+.access-text{flex:1;}
+.access-label{font-weight:600;color:var(--navy);margin-right:6px;}
 
 .empty-state{
   border:1px dashed var(--border);border-radius:10px;padding:36px 24px;
