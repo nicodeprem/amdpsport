@@ -38,12 +38,13 @@ nav ul{display:flex;align-items:center;gap:28px;list-style:none;flex-wrap:wrap;}
 nav ul li a{font-weight:600;font-size:14.5px;color:var(--text);padding-bottom:4px;border-bottom:2px solid transparent;}
 nav ul li a:hover,nav ul li a.active{color:var(--teal);border-color:var(--teal);}
 .nav-cta{
-  display:inline-flex;align-items:center;font-weight:600;font-size:14px;color:#fff;
-  background:linear-gradient(135deg,#dd8a3d,var(--accent-dark));
-  box-shadow:0 6px 16px -8px rgba(184,99,10,0.5);
-  padding:10px 20px;border-radius:999px;white-space:nowrap;
+  display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;color:#fff;
+  background:linear-gradient(135deg,#194b59,var(--navy));
+  box-shadow:0 6px 16px -8px rgba(15,43,53,0.55);
+  padding:9px 20px;border-radius:999px;white-space:nowrap;
 }
-.nav-cta:hover{box-shadow:0 8px 20px -8px rgba(184,99,10,0.6);}
+.nav-cta img{width:18px;height:18px;flex-shrink:0;}
+.nav-cta:hover{box-shadow:0 8px 20px -8px rgba(15,43,53,0.65);}
 
 main{padding:52px 0 88px;}
 
