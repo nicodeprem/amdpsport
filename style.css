@@ -182,6 +182,8 @@ li{margin-bottom:6px;}
 .inline-link{text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:2px;}
 .inline-link:hover{color:var(--teal);text-decoration-color:var(--teal);}
 
+.article-date{font-size:13.5px;color:var(--text-light);margin-bottom:24px;}
+
 .back-link{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14.5px;color:var(--text-light);margin-bottom:8px;}
 .back-link:hover{color:var(--accent);}
 .back-link svg{width:15px;height:15px;}
