@@ -122,6 +122,7 @@ li{margin-bottom:6px;}
   border-radius:14px;padding:20px 24px;margin-bottom:16px;
   box-shadow:0 10px 26px -18px rgba(15,43,53,0.25);
 }
+.doctor-left{display:flex;align-items:center;gap:14px;}
 .doctor-info strong{display:block;color:var(--navy);font-size:15.5px;margin-bottom:2px;}
 .doctor-info span{color:var(--text-light);font-size:13.5px;}
 
@@ -132,13 +133,14 @@ li{margin-bottom:6px;}
   border-radius:14px;padding:20px 24px;margin:22px 0 12px;
   box-shadow:0 10px 26px -18px rgba(15,43,53,0.25);
 }
-.location-icon{
-  width:44px;height:44px;border-radius:50%;flex-shrink:0;
-  background:linear-gradient(135deg,#eaf6f5,#d3ece9);
-  display:flex;align-items:center;justify-content:center;
-}
-.location-icon svg{width:20px;height:20px;color:var(--teal-dark);}
 .location-card .map-link{font-weight:600;font-size:15.5px;}
+
+.doctor-photo,.location-photo{
+  width:46px;height:46px;border-radius:50%;flex-shrink:0;
+  object-fit:cover;object-position:center top;
+  box-shadow:0 2px 6px rgba(15,43,53,0.18);
+}
+.location-photo{object-position:center;}
 
 .empty-state{
   border:1px dashed var(--border);border-radius:10px;padding:36px 24px;
