@@ -39,12 +39,12 @@ nav ul li a{font-weight:600;font-size:14.5px;color:var(--text);padding-bottom:4p
 nav ul li a:hover,nav ul li a.active{color:var(--teal);border-color:var(--teal);}
 .nav-cta{
   display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;color:#fff;
-  background:linear-gradient(135deg,#17a3a3,var(--teal));
-  box-shadow:0 6px 16px -8px rgba(14,124,124,0.5);
+  background:#14a3a3;
+  box-shadow:0 6px 16px -8px rgba(20,163,163,0.55);
   padding:9px 20px;border-radius:999px;white-space:nowrap;
 }
 .nav-cta img{width:18px;height:18px;flex-shrink:0;}
-.nav-cta:hover{box-shadow:0 8px 20px -8px rgba(14,124,124,0.6);}
+.nav-cta:hover{background:#128f8f;box-shadow:0 8px 20px -8px rgba(20,163,163,0.65);}
 
 main{padding:52px 0 88px;}
 
