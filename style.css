@@ -143,6 +143,18 @@ li{margin-bottom:6px;}
 }
 .location-photo{object-position:center;}
 
+.access-card{
+  background:linear-gradient(135deg,#f8fbfa,#eef6f5);
+  border-radius:14px;padding:6px 24px;margin:0 0 12px;
+  box-shadow:0 10px 26px -18px rgba(15,43,53,0.25);
+}
+.access-row{
+  display:flex;gap:10px;flex-wrap:wrap;font-size:14.5px;padding:12px 0;
+  border-bottom:1px solid rgba(15,43,53,0.06);
+}
+.access-row:last-child{border-bottom:none;}
+.access-label{font-weight:600;color:var(--navy);min-width:110px;flex-shrink:0;}
+
 .empty-state{
   border:1px dashed var(--border);border-radius:10px;padding:36px 24px;
   text-align:center;color:var(--text-light);margin:20px 0;
